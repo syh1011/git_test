@@ -1,6 +1,7 @@
 package org.hbilab.spring.controller.notice;
 import javax.servlet.http.HttpServletRequest;
 
+
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,8 @@ public class NoticeController{
 	public String index() {
 		
 		//return "/WEB-INF/views/index.jsp";
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("data", "notice");
 		return "notice";
 	}
 	
