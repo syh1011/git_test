@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
-
+import org.springframework.web.servlet.ModelAndView;
 @org.springframework.stereotype.Controller
 
 public class HomeController{
 	
 	@RequestMapping(value="/home", method = RequestMethod.GET)
 	public String index() {
-		
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("data", "notice");
 		//return "/WEB-INF/views/index.jsp";
 		return "home";
 	}
