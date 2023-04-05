@@ -12,11 +12,11 @@ import org.springframework.web.servlet.mvc.Controller;
 
 public class HomeController{
 	
-	@RequestMapping(value="/home", method = RequestMethod.GET)
+	@RequestMapping(value="/home2", method = RequestMethod.GET)
 	public String index() {
 		
 		//return "/WEB-INF/views/index.jsp";
-		return "home";
+		return "home2";
 	}
 	
 }
