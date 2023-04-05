@@ -14,13 +14,13 @@ import org.springframework.web.servlet.mvc.Controller;
 
 public class NoticeController{
 	
-	@RequestMapping(value="/notice", method = RequestMethod.GET)
+	@RequestMapping(value="/notice2", method = RequestMethod.GET)
 	public String index() {
-		
-		//return "/WEB-INF/views/index.jsp";
+
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("data", "notice");
 		return "notice";
+
 	}
 	
 }
