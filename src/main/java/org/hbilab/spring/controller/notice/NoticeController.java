@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.Controller;
 
 public class NoticeController{
 	
-	@RequestMapping(value="/notice2", method = RequestMethod.GET)
+	@RequestMapping(value="/notice", method = RequestMethod.GET)
 	public String index() {
 
 		ModelAndView mv = new ModelAndView();
