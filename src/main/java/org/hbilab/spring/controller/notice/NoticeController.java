@@ -25,15 +25,3 @@ public class NoticeController{
 	}
 	
 }
-/*
-public class IndexController implements Controller{
-	
-	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		ModelAndView mv = new ModelAndView();
-		mv.addObject("data","Hello Spring");
-		mv.setViewName("/WEB-INF/views/index.jsp");
-		return mv; 
-	}
-	
-}
-*/
